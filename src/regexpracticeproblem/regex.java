@@ -30,6 +30,15 @@ public class regex {
     	else {
     		System.out.println("Invalid email address");
     	}
+    	
+    	System.out.println("Enter phone number");
+    	String phone=sc.nextLine();
+    	if(phone.matches("[91 ]{3}[789]{1}\\d{9}")) {
+    		System.out.println("Valid phone number");
+    	}
+    	else {
+    		System.out.println("Invalid phone number");
+    	}
     }
 
 }
