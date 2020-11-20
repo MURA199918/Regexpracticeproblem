@@ -39,6 +39,16 @@ public class regex {
     	else {
     		System.out.println("Invalid phone number");
     	}
+    	
+    	System.out.println("Enter password");
+    	String password=sc.nextLine();
+    	if(password.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\s+$).{8,20}$")) {
+    		System.out.println("Valid password");
+    	}
+    	else {
+    		System.out.println("Invalid password");
+    	}
+    	
     }
 
 }
