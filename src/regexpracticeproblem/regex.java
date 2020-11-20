@@ -13,12 +13,22 @@ public class regex {
     		System.out.println("Invalid first name");
     	}
     	
+    	System.out.println("Enter last name");
     	String lastname=sc.nextLine();
     	if(lastname.matches("^[A-Z][A-Z a-z]{3,25}$")) {
     		System.out.println("Valid last name");
     	}
     	else {
     		System.out.println("Invalid last name");
+    	}
+    	
+    	System.out.println("Enter email id");
+    	String email=sc.nextLine();
+    	if(email.matches("^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*@[0-9a-zA-Z]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})$")) {
+    		System.out.println("valid email address");
+    	}
+    	else {
+    		System.out.println("Invalid email address");
     	}
     }
 
