@@ -42,7 +42,7 @@ public class regex {
     	
     	System.out.println("Enter password");
     	String password=sc.nextLine();
-    	if(password.matches("^(?=.*[A-Z]).{8,}$")) {
+    	if(password.matches("^(?=.*[A-Z])(?=.*[0-9]).{8,}$")) {
     		System.out.println("Valid password");
     	}
     	else {
