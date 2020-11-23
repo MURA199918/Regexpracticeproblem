@@ -1,5 +1,6 @@
 package regexpracticeproblem;
 import java.util.*;
+import java.util.regex.Pattern;
 
 public class regex {
     public static void main(String args[]) {
@@ -49,17 +50,25 @@ public class regex {
     		System.out.println("Invalid password");
     	}
     	
-    	/*int var=1;
+    	int var=1;
     	while(var==1) {
     		System.out.println("Var 1 to continue and others to exit");
     		var=sc.nextInt();
     		if(var==1) {
     			System.out.println("Enter email id");
     			String emailid=sc.next();
-    			String pattern=
+    			String pattern="^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*@[0-9a-zA-Z]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})$";
+    			if(Pattern.matches(pattern, emailid)) {
+    				System.out.println("Valid emailid");
+    			}
+    			else {
+    				System.out.println("Invalid emailid");
+    			}
     		}
+    		else
+    			break;
     	}
-    	*/
+    	
     	
     }
 
