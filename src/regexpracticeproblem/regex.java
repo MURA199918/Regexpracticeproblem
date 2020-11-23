@@ -42,12 +42,24 @@ public class regex {
     	
     	System.out.println("Enter password");
     	String password=sc.nextLine();
-    	if(password.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\s+$).{8,20}$")) {
+    	if(password.matches("[0-9a-zA-Z]{8,}")) {
     		System.out.println("Valid password");
     	}
     	else {
     		System.out.println("Invalid password");
     	}
+    	
+    	/*int var=1;
+    	while(var==1) {
+    		System.out.println("Var 1 to continue and others to exit");
+    		var=sc.nextInt();
+    		if(var==1) {
+    			System.out.println("Enter email id");
+    			String emailid=sc.next();
+    			String pattern=
+    		}
+    	}
+    	*/
     	
     }
 
